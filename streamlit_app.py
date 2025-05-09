@@ -41,11 +41,10 @@ with tab2:
     st.write("탭 2에 해당하는 내용입니다.")  # 두 번째 탭에 표시할 내용
 
     name = st.text_input("배우자 이름을 입력해주세요:")
+    st.balloons()
     st.error(name+"님과 꼭 결혼하시길 바랍니다!")
 
-    # 여러 옵션 중 하나 선택
-gender = st.radio("성별을 선택하세요", ["남성", "여성", "기타"])
-st.write("선택한 성별:", gender)
+
 
 # 카메라로 사진 촬영
 image_data = st.camera_input("사진을 찍어보세요")
